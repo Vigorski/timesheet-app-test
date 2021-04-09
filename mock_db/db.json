@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "projectName": "Insomnia",
+      "projectDesc": "Solutions for restlessness",
+      "id": 1
+    },
+    {
+      "projectName": "igort",
+      "projectDesc": "vele",
+      "id": 2
+    }
+  ],
+  "times": [
+    {
+      "description": "headstanding",
+      "amount": 2,
+      "projectId": 1,
+      "id": 1
+    },
+    {
+      "description": "drinking",
+      "amount": 23,
+      "projectId": 1,
+      "id": 2
+    },
+    {
+      "description": "punching stuffed kitty",
+      "amount": 5,
+      "projectId": 1,
+      "id": 3
+    },
+    {
+      "description": "lorem ipsum dolor sit amet",
+      "amount": 2,
+      "projectId": 2,
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+input {
+    width: 100%;
+    max-height: 50px;
+    padding: 1rem;
+    color: $color-dark-grey;
+    border: 2px solid $color-light-grey-1;
+    border-radius: $size-border-radius-s;
+    background-color: #fff;
+    font: 800 1rem $font-gilroy;
+
+    &:focus {
+      border: 2px solid $color-primary;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      opacity: 1;
+      color: $color-dark-grey;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      opacity: 1;
+      color: $color-dark-grey;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      opacity: 1;
+      color: $color-dark-grey;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      opacity: 1;
+      color: $color-dark-grey;
+    }
+}

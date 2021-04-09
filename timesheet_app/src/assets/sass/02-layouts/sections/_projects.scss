@@ -1,0 +1,16 @@
+.project-single {
+  &-body {
+    clear: both;
+
+    .table-wrapper {
+      float: right;
+      width: calc(100% - 400px);
+    }
+
+    &-aside {
+      width: 370px;
+      margin-right: calculate-rem(30px);
+      float: left;
+    }
+  }
+}

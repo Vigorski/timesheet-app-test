@@ -1,0 +1,31 @@
+h1 {
+  font-size: calculate-rem(36px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: get-line-height(36px, 40px);
+  color: $color-dark-grey;
+}
+
+h2 {
+  font-size: calculate-rem(32px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: get-line-height(32px, 32px);
+  color: $color-dark-grey;
+}
+
+h3 {
+  font-size: calculate-rem(24px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: get-line-height(24px, 28px);
+  color: $color-dark-grey;
+}
+
+h4 {
+  font-size: calculate-rem(20px);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: get-line-height(20px, 24px);
+  color: $color-dark-grey;
+}

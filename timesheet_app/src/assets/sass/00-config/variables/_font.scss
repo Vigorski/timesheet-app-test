@@ -1,0 +1,27 @@
+//Klima
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-FREE/Gilroy-Light.eot');
+  src: url('../fonts/Gilroy-FREE/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Gilroy-FREE/Gilroy-Light.woff2') format('woff2'),
+          url('../fonts/Gilroy-FREE/Gilroy-Light.woff') format('woff'),
+          url('../fonts/Gilroy-FREE/Gilroy-Light.ttf')  format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.eot');
+  src: url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.woff2') format('woff2'),
+          url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.woff') format('woff'),
+          url('../fonts/Gilroy-FREE/Gilroy-ExtraBold.ttf')  format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-gilroy: 'Gilroy', sans-serif;

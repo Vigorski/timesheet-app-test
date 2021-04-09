@@ -1,0 +1,56 @@
+.ReactModal {
+    &__Overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color-dark-grey, 0.75);
+        z-index: 9999;
+    }
+
+    &__Content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+        border: 2px solid $color-light-grey-1;
+        background: #fff;
+        border-radius: $size-border-radius-l;
+        padding: 40px 35px;
+        max-width: 600px;
+        min-width: 300px;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba($color-primary, 0.2);
+    }
+}
+
+.react-modal {
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: calculate-rem(30px);
+        margin-bottom: calculate-rem(50px);
+        border-bottom: 2px solid $color-light-grey-1;
+    }
+
+    &-body {
+        &-message {
+            font-weight: initial;
+            color: black;
+        }
+    }
+    
+    &-footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 35px;
+
+        & > button {
+            margin-left: 16px;
+        }
+    }
+}

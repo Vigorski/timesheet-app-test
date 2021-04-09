@@ -1,0 +1,22 @@
+form {
+    padding: 0;
+    width: 100%;
+}
+
+.input-wrapper {
+    margin: 20px 0;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        min-height: 50px;
+    }
+}
+
+.form-footer {
+    margin-top: calculate-rem(50px);
+
+    button{
+        width: 100%;
+    }
+}

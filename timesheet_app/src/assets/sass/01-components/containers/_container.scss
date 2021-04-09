@@ -1,0 +1,22 @@
+.container {
+    width: 85%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.section {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: calculate-rem(70px);
+    }
+}
+
+%block {
+    background-color: #fff;
+    border-radius: $size-border-radius-l;
+    border: 2px solid $color-light-grey-1;
+    overflow: hidden;
+    box-shadow: 0 10px 18px rgba(101, 154, 173, 0.2);
+}

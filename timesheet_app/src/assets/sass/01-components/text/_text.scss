@@ -1,0 +1,23 @@
+p {
+    font: 300 calculate-rem(14px) $font-gilroy;
+    line-height: get-line-height(20px, 28px);
+    color: $color-medium-grey;
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
+.input-error-message {
+    margin: 5px 0;
+    font-size: calculate-rem(12px);
+    color: $color-primary;
+    font-weight: 800;
+}
+
+label {
+    margin-bottom: 8px;
+    display: inline-block;
+    color: $color-dark-grey;
+    font: 300 1rem $font-gilroy;
+}

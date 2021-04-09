@@ -1,0 +1,82 @@
+.table-wrapper {
+    @extend %block;
+}
+
+table {
+    color: $color-medium-grey;
+
+    tr {
+        th {
+            background: white;
+            text-transform: uppercase;
+            color: $color-primary;
+            border: none;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 19px;
+        }
+    }
+
+    td {
+        border-top: 2px solid $color-light-grey;
+        padding: 1rem;
+        vertical-align: middle;
+    }
+
+    td, th {
+        padding: 1.5rem .75rem;
+        text-align: left;
+
+        &.actions {
+            text-align: center;
+            width: calculate-rem(150px);
+    
+            .actions-wrapper {
+                display: flex;
+                align-items: center;                
+                justify-content: center;
+
+                .btn-stripped {
+                    margin: 0 calculate-rem(10px);
+                }
+            }
+        }
+
+        &:first-child {
+            padding-left: 2rem;
+        }
+
+        &:last-child {
+            padding-right: 2rem;
+        }
+    }
+
+    tbody {
+        tr {
+            @include transition(background-color, 0.2s);
+
+            td:first-child {
+                position: relative; 
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 0;
+                    background-color: $color-secondary;
+                    left: 0;
+                    top: 0;
+                    @include transition(width, 0.2s);
+                }
+            }
+
+            &:hover {
+                background-color: rgba($color-light-grey, 0.25);
+                
+                td:first-child::after {
+                    width: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.project-single-body-aside {
+  @extend %block;
+  padding: 1.5rem 2rem;
+
+  h3 {
+    margin: -1.5rem -2rem 20px;
+    padding: 1.25rem 2rem;
+    background: $gradient-main;
+    color: #fff;
+  }
+
+  &-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    margin: 0px auto calculate-rem(40px);
+    border: 5px solid $color-primary;
+    border-radius: 50%;
+    color: $color-medium-grey;
+
+    b {
+      font-size: 2.25rem;
+    }
+  }
+
+  &-info {
+    border-top: 2px solid $color-light-grey-1;
+    padding-top: 20px;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}

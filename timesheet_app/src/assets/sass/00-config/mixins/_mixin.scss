@@ -1,0 +1,26 @@
+@function calculate-rem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@function get-line-height($font-size, $line-height) {
+  @return $line-height / $font-size;
+}
+  
+// CENTERING
+
+@mixin absolute-center-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// TRANSITION
+
+@mixin transition($property, $interval, $easing: ease-in-out, $delay: 0s) {
+    transition-property: $property;
+    transition-duration: $interval;
+    transition-timing-function: $easing;
+    transition-delay:$delay;
+}
